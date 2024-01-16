@@ -1,0 +1,446 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    background-color: #E90C04;
+    box-sizing: inherit;
+}
+.container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Font */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Kanit-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url("../fonts/Kanit-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Kanit-ExtraBold.ttf") format("truetype");
+}
+
+/* HEADER */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -9px;
+    position: fixed;
+    z-index: 21 ;
+    
+}
+.menu__nav_link:hover{
+    color: #c0c0c0
+}
+.nav__logo_img {
+    width: 20%;
+    margin-left: 20px;
+    min-width: 200px;
+    transition: all ease-in-out 250ms;
+}
+.nav__logo_img:hover {
+    transform: scale(1.07,1.07);
+
+}
+.nav__menu {
+    margin-right: 65px;
+    flex-grow: 1;
+}
+.nav__menu_parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__menu_item {
+    list-style: none;
+    margin-right: 20px;
+    flex-grow: 1;
+    text-align: right;
+
+}
+.menu__nav_link {
+    margin-left: 80px;
+    font-size: 24px;
+    font-family: "Poppins-Bold";
+    transition: all ease-in-out 220ms;
+    text-decoration: none;
+    color: #151515;
+
+}
+.hyper-link:hover {
+    color: #c0c0c0
+}
+.hyper-link {
+    transition: all ease-in-out 250ms;
+}
+.header__detail_title_price_title {
+    margin: 20px 0 0 6px;
+    font-family: 'Poppins-Black';
+    color: #000;
+    font-size: 16px;
+}
+.header__detail_title_price {
+    margin: 0 0 0 6px;
+    font-family: 'Poppins-Bold';
+    font-size: 33px;
+}
+.header__detail_text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.header__detail_text_title {
+    font-family: 'Poppins-Bold';
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.header__detail_text_content {
+    width: 412px;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.header__detail_text_learn {
+    margin: 0;
+    font-family: 'Poppins';
+    text-decoration: underline;
+    font-size: 16px;
+    flex-grow: 1;
+}
+.header__detail_title_model {
+    font-family: "Poppins-Bold";
+    margin: 0;
+    font-size: 33px;
+    margin-top: -55px;
+    margin-left: 6px;
+}
+.header__detail_title_name {
+  font-family: "Poppins-Bold";  
+  font-size: 130px;
+  margin: 100px 0 0;
+  margin: 100px 70px 0 0;
+
+}
+.header__detail_title {
+    flex-grow: 1;
+    text-align: left;
+}
+.header__details {
+    display: flex;
+    align-items:center;
+}
+
+.header__img-container {
+    background-image: url("../Images/img.png");
+    background-size: cover;
+    background-position: center;
+    width: 771px;
+    height: 261px;
+    margin-top: 15px;
+}
+
+.header__img-file {
+width: 100%;
+}
+
+/* Main */
+
+section.main {
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+.main_product__title {
+    font-size: 50px;
+    margin: 120px auto 60px;
+    font-family: 'Poppins-Black';
+    text-align: center;
+
+}
+.main_img_container {
+    width: 70%;
+    margin: 0 auto;
+ 
+}
+.main_img {
+    border-radius: 1%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    box-shadow: 16px 16px 20px #151515;
+ }
+.main_img_text {
+    margin: 30px auto;
+    font-size: 15px;
+    font-family: 'Poppins';
+    width: 70%;
+}
+
+.main_product_caption_text {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 30px auto 0;
+    width: 61%;
+    text-align: left;
+}
+.main_product_caption {
+    margin: 40px;
+}
+.main_product_img_container-1 {
+    background-image: url("../Images/Dodge-sample1.jpg");
+    background-size: cover;
+    background-position: top;
+    min-width: 61%;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 16px 16px 20px #151515;
+    border-radius: 1%;
+    cursor: pointer;
+    background-clip: border-box;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 250ms;
+}
+.main_product_img_container-2 {
+    background-image: url("../Images/Dodge-sample-2.jpg");
+    background-size: cover;
+    background-position: top;
+    min-width: 61%;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 16px 16px 20px #151515;
+    border-radius: 1%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 250ms;
+
+}
+.main_product_img_container-3 {
+    background-image: url("../Images/Dodge-sample-3.jpg");
+    background-size: cover;
+    background-position: top;
+    min-width: 61%;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 16px 16px 20px #151515;
+    border-radius: 1%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+
+}
+.main_product_title_text {
+    margin: 50px 0;
+
+}
+.main_product_title {
+    font-family: 'Poppins-Black';
+    font-size: 30px;
+}
+.main_product__content_sample {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main_product__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+.main_product_img_container-3:hover, .main_product_img_container-2:hover, .main_product_img_container-1:hover{
+    transform: scale(1.07,1.07);
+}
+
+
+/* Contact-us */
+
+
+.main_product__title2 {
+    font-size: 50px;
+    margin: 120px auto 120px;
+    font-family: 'Poppins-Black';
+    text-align: center;
+
+}
+.main_product__title {
+
+}
+.contact_us {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 120px;
+
+}
+.contact_us__content {
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+iframe {
+    box-shadow: 16px 16px 20px #151515;
+}
+
+
+
+
+/* Responsiveness */
+
+
+
+@media screen and (max-width: 2110px) {
+    .header__img-container {
+        height: 630px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 1810px) {
+    .header__detail_title {
+        margin-left: 180px;
+    }
+    .header__img-container {
+        height: 580px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1556px) {
+    .header__img-container {
+        height: 512px;
+        
+
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .nav__menu {
+        margin-right: 278px;
+    }
+    .header__detail_title {
+        margin-left: 50px;
+    }
+    .header__img-container {
+        height: 395px;
+    }
+    .main_product_caption_text {
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .main_product__content {
+        flex-wrap: wrap;
+    }
+    .main_product__content, .main_product, .main_product__title {
+        width: 677px;
+        margin: 0px auto;
+    }
+    .main_product__title {
+        margin: 40px auto;
+    }
+    .contact_us {
+        gap: 60px;
+    }
+
+    
+}
+@media screen and (max-width: 992px) {
+    .nav__logo_img {
+        width: 10%;
+        margin-left: 250px;
+        min-width: 153px;
+       
+    }
+    .header__detail_title_name {
+        font-size: 110px;
+    }
+    .header__detail_title_model {
+        font-size: 28px;
+    }
+    .header__detail_text_content {
+        width: 250px;
+    }
+    .header__img-container {
+        height: 340px;
+    }
+    .nav {
+        position: static;
+        margin-left: 50px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .nav {
+        display: inline-block;
+    }
+    .nav__menu {
+        margin-right: 140px;
+    }
+    .header__details {
+        display: inline-block;
+    }
+    .header__detail_title {
+        text-align: center;
+        margin-left: 150px;
+    }
+    .header__detail_title_model {
+        margin-right: 81px;
+
+    }
+    .header__detail_title_name {
+        margin: 10px 39px 0px 14px;
+        
+    }
+    .header__detail_title_price_title {
+        margin-top: 0;
+    }
+    .header__detail_text_title {
+        margin-left: 230px;
+    }
+    .header__detail_text_content {
+        margin-left: 220px;
+        text-align: center;
+    }
+    .header__detail_text_learn {
+        margin-left: 295px;
+    }
+    .header__img-container {
+        width: 771px;
+        height: 261px;
+        order: 2;
+    }
+    .contact_us {
+        flex-wrap: wrap;
+    }
+    .contact_us__map {
+        margin-left: 50px;
+    }
+    #Contact {
+        width: 765px;
+        margin: 0 auto;
+    }
+}
